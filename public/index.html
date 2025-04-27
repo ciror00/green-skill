@@ -32,14 +32,14 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container">
-        <a class="navbar-brand" href="#">Mi Blog</a>
+        <a class="navbar-brand" href="#">Habilidades verdes</a>
         <button class="btn btn-light ms-auto" @click="openRegisterModal">Crear Cuenta</button>
       </div>
     </nav>
 
     <!-- Contenido principal -->
     <div class="container py-5">
-      <h1 class="text-center mb-4">Blog Vue SPA</h1>
+      <h1 class="text-center mb-4">Portfolio de proyectos sustentables</h1>
 
       <div class="row g-4">
         <div class="col-md-4" v-for="(post, index) in posts" :key="index">
@@ -127,7 +127,7 @@
       methods: {
         async fetchPosts() {
           try {
-            const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=6');
+            const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=24');
             const data = await res.json();
             this.posts = data.map((post, index) => ({
               title: post.title,
