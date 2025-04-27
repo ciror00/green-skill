@@ -1,9 +1,9 @@
 <?php
 // Configuración de la base de datos
-$host = '127.0.0.1';
-$db   = 'green';
-$user = 'root';
-$pass = '';
+$host = 'localhost';
+$db   = 'c0310459_green';
+$user = 'c0310459_green';
+$pass = 'zereRU56ze';
 $table = 'posts_2';
 
 // Habilitar CORS
