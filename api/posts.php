@@ -1,10 +1,10 @@
 <?php
 // Configuración de la base de datos
-$host = 'localhost';
-$db   = 'c0310459_green';
-$user = 'c0310459_green';
-$pass = 'zereRU56ze';
-$table = 'posts_2';
+$host = '';
+$db   = '';
+$user = '';
+$pass = '';
+$table = '';
 
 // Habilitar CORS
 header('Access-Control-Allow-Origin: *');
@@ -17,7 +17,7 @@ try {
 
     // Consulta para traer todos los posts
     $sql = "SELECT id, title, image, description FROM ".$table;
-    $stmt = $pdo->query("SELECT id, title, image, description FROM posts_2");
+    $stmt = $pdo->query($sql);
 
     $posts = [];
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap 5 CSS -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
+  <link rel="prefetch" rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
   <!-- VueJS -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
   <!-- SweetAlert2 -->
@@ -173,7 +173,7 @@
       },
       methods: {
         async fetchWeather() {
-        const apiKey = '037812f38d582283ca89bb2dba6bddcc'; // Se deben agregar credenciales de la pagina de OpenWeather
+        const apiKey = ''; // Se deben agregar credenciales de la pagina de OpenWeather
         const city = 'Buenos Aires'; 
         try {
           const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
