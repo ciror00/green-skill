@@ -1,9 +1,9 @@
 <?php
 // Configuración de la base de datos
-$host = 'localhost';       // o IP del servidor de base de datos
-$db   = 'nombre_de_tu_base'; // reemplaza con el nombre de tu base de datos
-$user = 'usuario';         // usuario MySQL
-$pass = 'contraseña';      // contraseña MySQL
+$host = '';       // o IP del servidor de base de datos
+$db   = ''; // reemplaza con el nombre de tu base de datos
+$user = '';         // usuario MySQL
+$pass = '';      // contraseña MySQL
 
 // Habilitar CORS
 header('Access-Control-Allow-Origin: *');
