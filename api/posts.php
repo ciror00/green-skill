@@ -4,6 +4,7 @@ $host = '127.0.0.1';
 $db   = 'green';
 $user = 'root';
 $pass = '';
+$table = 'posts_2';
 
 // Habilitar CORS
 header('Access-Control-Allow-Origin: *');
@@ -15,7 +16,8 @@ try {
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Consulta para traer todos los posts
-    $stmt = $pdo->query("SELECT id, title, image, description FROM posts");
+    $sql = "SELECT id, title, image, description FROM ".$table;
+    $stmt = $pdo->query("SELECT id, title, image, description FROM posts_2");
 
     $posts = [];
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
