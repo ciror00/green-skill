@@ -14,3 +14,12 @@ El objetivo del presente repositorio es presentar un ejemplo práctico, sobre la
 - VueJS 3.2
 - PHP 8.4
 - MySQL 8.4
+
+### Clonar e ingresar al repositorio
+
+```
+git clone https://github.com/ciror00/green-skill.git
+cd green-skill
+```
+
+Una vez dentro del repositorio, cara rama representa una version mas, o menos, evolucionada de la aplicacion.
