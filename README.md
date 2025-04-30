@@ -10,7 +10,15 @@ La formación sobre habilidades verdes, en el ámbito de software, son important
 
 El objetivo del presente repositorio es presentar un ejemplo práctico, sobre la aplicación de buenas prácticas sustentables para el desarrollo de software.
 
-### Tecnologias
+### Tecnologias de la rama Iteracion0
 - VueJS 3.2
-- PHP 8.4
-- MySQL 8.4
+
+### Clonar e ingresar al repositorio
+
+```
+git clone https://github.com/ciror00/green-skill.git
+cd green-skill
+git checkout iteracion0
+```
+
+El proyecto se puede inicializar desde el archivo index.html
