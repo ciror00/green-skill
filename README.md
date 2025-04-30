@@ -20,9 +20,17 @@ El objetivo del presente repositorio es presentar un ejemplo práctico, sobre la
 ```
 git clone https://github.com/ciror00/green-skill.git
 cd green-skill
-git checkout iteracion0
+git checkout iteracion1-fix
 ```
 
-En el archivo `api/posts.php` se deben configurar los parametros de la base de datos. La misma debe tener una tabla llamada "posts" y contar las columnas: id, title, image, description.
-
-El campo **image** debe guardar URLs de imagenes.
+Se debe crear un archivo `api/config.json` se deben configurar los parametros de la base de datos con la siguiente estructura:
+```
+{
+    "localhost": "",
+    "db": "",
+    "user": "",
+    "pass": "",
+    "table": ""
+}
+```
+La DB debe tener una tabla llamada "posts" y contar las columnas: id, title, image, description. El campo **image** puede guardar URLs de imagenes o rutas relativas en la carpeta img.
