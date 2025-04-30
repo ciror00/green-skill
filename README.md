@@ -14,3 +14,15 @@ El objetivo del presente repositorio es presentar un ejemplo práctico, sobre la
 - VueJS 3.2
 - PHP 8.4
 - MySQL 8.4
+
+### Clonar e ingresar al repositorio
+
+```
+git clone https://github.com/ciror00/green-skill.git
+cd green-skill
+git checkout iteracion2
+```
+
+En el archivo `api/posts.php` se deben configurar los parametros de la base de datos. La misma debe tener una tabla llamada "posts" y contar las columnas: id, title, image, description.
+
+El campo **image** debe guardar URLs de imagenes o rutas relativas de la carpeta `img`.
