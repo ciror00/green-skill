@@ -23,7 +23,7 @@ cd green-skill
 git checkout iteracion1-fix
 ```
 
-Se debe crear un archivo `api/config.json` se deben configurar los parametros de la base de datos con la siguiente estructura:
+Se debe crear un archivo `api/config.json` para configurar los parametros de la base de datos. El mismo debe tener la siguiente estructura:
 ```
 {
     "localhost": "",
