@@ -1,9 +1,11 @@
 <?php
 // Configuración de la base de datos
-$host = '';       // o IP del servidor de base de datos
-$db   = ''; // reemplaza con el nombre de tu base de datos
-$user = '';         // usuario MySQL
-$pass = '';      // contraseña MySQL
+$objeto = json_decode($jon); // crear un JSON, donde colocar los parametros
+$host = '';
+$db   = '';
+$user = '';
+$pass = '';
+$table = '';
 
 // Habilitar CORS
 header('Access-Control-Allow-Origin: *');
@@ -15,7 +17,8 @@ try {
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Consulta para traer todos los posts
-    $stmt = $pdo->query("SELECT id, title, image, description FROM posts");
+    $sql = "SELECT id, title, image, description FROM ".$table;
+    $stmt = $pdo->query($sql);
 
     $posts = [];
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
