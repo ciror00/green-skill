@@ -1,11 +1,12 @@
 <?php
 // Configuración de la base de datos
-$objeto = json_decode($jon); // crear un JSON, donde colocar los parametros
-$host = '';
-$db   = '';
-$user = '';
-$pass = '';
-$table = '';
+$file = file_get_contents('./config.json'); // crear un JSON, donde colocar los parametros
+$config = json_decode($file, true); 
+$host = $config['host'];
+$db   = $config['db'];
+$user = $config['user'];
+$pass = $config['pass'];
+$table = $config['table'];
 
 // Habilitar CORS
 header('Access-Control-Allow-Origin: *');
